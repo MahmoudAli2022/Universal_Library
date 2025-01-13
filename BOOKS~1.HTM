@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Universal Library Books</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Universal Library</h1>
+    <div class="navbar">
+      <a href="Home.html">Home</a>
+      <a href="AboutUs.html">About Us</a>
+      <a href="Books.html">Books</a>
+    </div>
+  </div>
+
+
+  <div id="content">
+    <table id="Table">
+      <tr>
+        <th>اختيار</th>
+        <th>إظهار التفاصيل</th>
+        <th>السعر</th>
+        <th>العنوان</th>
+        <th>ISBN رمز الكتاب</th>
+      </tr>
+      <tr>
+        <td>
+          <label for="optionA1"></label>
+          <input type="radio" id="option-a" name="options" value="optionA1">
+        </td>
+        <td>
+          <button onclick="toggleDetails('property1')"></button>
+        </td>
+        <td>35000ل.س</td>
+        <td>رحلة بلاد الغرب</td>
+        <td>978-222</td>
+      </tr>
+      <tr id="property1" style="display: none">
+        <td colspan="4">
+          <p class="paragraph">
+            الناشر: دار المعارف</p>
+          <p class="paragraph">تصنيف الكتاب: يروي قصة مثيرة لمغامرة شاب</p>
+          <p class="paragraph">وصف الكتاب:
+            تتناول صفحات الكتاب تفاصيل الرحلة الشيقة والصعوبات التي واجهها الشاب أثناء تخطيه الصحاري القاحلة وتجاوزه
+            الجبال الشاهقة. يتجلى في كتاب "رحلة بلاد الغرب" روح المغامرة والاستكشاف التي تدفع الإنسان إلى تحدي حدوده
+            واكتشاف عوالم جديدة.
+
+            من خلال لغة جذابة وصور ملونة، ينقل الكتاب القارئ إلى عوالم مجهولة تنبض بالحياة والإثارة. يترك "رحلة بلاد
+            الغرب" بصمة عميقة في قلوب القراء، ملهمًا إياهم ليخوضوا رحلات استكشافية خاصة بهم ويكتشفوا جمال العالم من
+            حولهم </p>
+
+        <td><img class="book" src="image/image1.jpg" alt=""></td>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="optionB2"></label>
+          <input type="radio" id="optionB2" name="options" value="optionB2">
+        </td>
+        <td>
+          <button onclick="toggleDetails('property2')"></button>
+        </td>
+        <td>32000ل.س</td>
+        <td>لا تخافا </td>
+        <td>978-232</td>
+      </tr>
+      <tr id="property2" style="display: none">
+        <td colspan="4">
+          <p class="paragraph">
+            الناشر: دار المعارف</p>
+          <p class="paragraph">تصنيف الكتاب: هو كتاب يجمع بين الشجاعة والاعتماد على الله </p>
+
+          <p class="paragraph">وصف الكتاب:
+            صفحات هذا الكتاب تحفل بالنصائح القيمة والحكم العميقة التي تلهم القارئ ليكون شجاعًا في مواجهة التحديات ويثق
+            بقدرته على التغلب على الصعوبات. يعتمد الكتاب على قصص وتجارب واقعية تعكس قوة الإيمان والثقة في التوجيه والدعم
+            الإلهي.
+
+            "لاتخافا واترك الأمر لله" يعتبر دليلًا عمليًا لتحقيق التوازن النفسي والروحي، ويشجع القارئ على التفاؤل
+            والاعتماد على القوة الإلهية في كل جوانب حياته. هو كتاب يلهم، يوجه، ويعزز إيمان القارئ في قدرته على التغلب
+            على الصعاب بإيمان قوي وثقة لا تلين</p>
+
+
+        <td><img class="book" src="image/image2.jpg" alt=""></td>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="optionC3"></label>
+          <input type="radio" id="optionC3" name="options" value="optionC3">
+        </td>
+        <td>
+          <button onclick="toggleDetails('property3')"></button>
+        </td>
+        <td>24000ل.س</td>
+        <td>الرجل الخفي</td>
+        <td>978-232</td>
+      </tr>
+      <tr id="property3" style="display: none">
+        <td colspan="4">
+          <p class="paragraph">
+            الناشر: دار المعارف</p>
+          <p class="paragraph">تصنيف الكتاب: رواية خيالية تعتبر من أعمدة أدب الخيال العلمي </p>
+
+          <p class="paragraph">وصف الكتاب:
+            تروي القصة قصة عالم الفيزياء الشاب غريفين الذي يكتشف وسيلة لتحقيق الاختفاء التام ويصبح رجلًا خفيًا.
+
+            تعتبر "قصة الرجل الخفي" مغامرة شيقة تتناول موضوعات كثيرة منها العزلة، والقوة، والجشع. يتناول الكاتب ببراعة
+            تأثير الاختفاء على النفس البشرية وكيف تتغير حياة الرجل الخفي مع تزايد استخدامه لقوته الغامضة.
+
+            تتميز الرواية بتقنية السرد الشيقة والرصينة لهربرت جورج ويلز التي تجعل القارئ يعيش تجربة الرجل الخفي ويستكشف
+            معه تحديات العزلة والهروب من العالم الخارجي. يعتبر هذا الكتاب أسطورة في عالم الأدب الخيالي ويظل محبوبًا من
+            قبل القراء حتى يومنا هذا</p>
+
+
+        <td><img class="book" src="image/image3.jpg" alt=""></td>
+
+        </td>
+      </tr>
+      <tr>
+
+        <td>
+          <label for="optionD4"></label>
+          <input type="radio" id="optionD4" name="options" value="optionD4">
+        </td>
+        <td>
+          <button onclick="toggleDetails('property4')"></button>
+        </td>
+        <td>17000ل.س</td>
+        <td>تنين الجليد</td>
+        <td>978-242</td>
+      </tr>
+      <tr id="property4" style="display: none">
+        <td colspan="4">
+          <p class="paragraph">
+            الناشر: دار المعارف</p>
+          <p class="paragraph">"تنين الجليد" هو رواية فانتازية ملحمية تأسر القارئ بعالمها الخيالي المثير وشخصياتها
+            الغامضة والملهمة</p>
+
+          <p class="paragraph">تدور أحداث الرواية في عالم خيالي سحري يعج بالتنانين والمخلوقات السحرية، وتتبع رحلة شاب
+            شجاع يدعى ليون في مواجهة أعداء قديمين والبحث عن تنين الجليد الأسطوري.
+
+            تتميز "تنين الجليد" بأسلوب سردي مشوق ووصف مذهل للعوالم الخيالية التي يستكشفها الشخصيات. يُظهر الكتاب قوة
+            الصداقة والشجاعة في مواجهة التحديات والمصاعب، ويتناول مواضيع مثل الشجاعة، الصداقة، وقوة العزيمة.
+
+            صفحات "تنين الجليد" تحمل الإثارة والتشويق، وتأخذ القارئ في رحلة ملحمية مليئة بالمغامرات والتحديات. تجسد
+            الرواية بشكل رائع عالم الخيال وترسخ قيم الشجاعة والعزم في نفوس القراء، مما يجعلها واحدة من الروايات
+            الفانتازية الرائعة التي تبقى حاضرة في أذهان القراء بعد الانتهاء من قراءتها.
+          </p>
+
+
+        <td><img class="book" src="image/image4.jpg" alt=""></td>
+
+        </td>
+      </tr>
+      <tr>
+
+        <td>
+          <label for="optionE5"></label>
+          <input type="radio" id="optionE5" name="options" value="optionE5">
+        </td>
+        <td>
+          <button onclick="toggleDetails('property5')"></button>
+        </td>
+        <td>24000ل.س</td>
+        <td>الباحث عن المستحيل</td>
+        <td>978-252</td>
+      </tr>
+      <tr id="property5" style="display: none">
+        <td colspan="4">
+          <p class="paragraph">
+            الناشر: دار المعارف</p>
+          <p class="paragraph">الباحث عن المستحيل هو كتاب يستكشف عوالم الإيمان والتحدي والتطور الشخصي</p>
+
+          <p class="paragraph">
+            يحكي الكتاب قصة شاب ينطلق في رحلة بحث عن المستحيل، سعيًا وراء تحقيق أحلامه وتحقيق أهدافه الصعبة والمستحيلة.
+
+            يتناول الكتاب موضوعات مهمة مثل تحقيق الأحلام، وتحطيم الحواجز، والايمان بالذات. يلقي الضوء على قوة الإرادة
+            والتحفيز الشخصي في تحقيق الأهداف الصعبة والمستحيلة التي قد تبدو بعيدة المنال للبعض.
+
+            بأسلوبه الشيق والملهم، ينقل "الباحث عن المستحيل" رسالة إيجابية تحث القارئ على عدم الاستسلام والاستمرار في
+            السعي وراء أحلامه حتى تحقيقها. يعتبر هذا الكتاب مصدر إلهام وتحفيز للقراء لتحقيق النجاح والتغلب على الصعاب
+            بإيمان قوي وإصرار لا ينتهي
+          </p>
+
+        <td><img class="book" src="image/image5.jpg" alt=""></td>
+
+        </td>
+      </tr>
+    </table>
+    <td><button onclick="showForm('property1')">follow up</button></td>
+
+    <div id="formContainer" style="display: none">
+      <h3 class="Form">نموذج الطلب</h3>
+      <form id="userForm" onsubmit="return validateForm()">
+        <label for="name">الاسم الكامل:</label>
+        <input type="text" id="name" name="name" placeholder="أحرف هجائية فقط باللغة العربية" />
+        <label for="nationalId">الرقم الوطني:</label>
+        <input type="text" id="nationalId" name="nationalId"
+          placeholder="11 خانة - الخانتين إلى اليسار ترمزان إلى المحافظة" required />
+        <label for="date">تاريخ الولادة:</label>
+        <input type="date" id="date" name="date" placeholder="dd-mm-yyyy" />
+        <label for="phone">رقم الموبايل:</label>
+        <input type="tel" id="phone" name="phone" placeholder="يطابق أرقام شبكتي Syriatel و MTN" />
+        <label for="email">الإيميل:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" />
+
+        <button type="submit" id="buy">ارسال
+
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  </table>
+  <script src="myFunctions.js"></script>
+</body>
+
+</html>
